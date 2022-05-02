@@ -10,7 +10,7 @@
     font-size: larger;
 }
 
-#calcutalor{
+#calculator{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -25,4 +25,9 @@
 .boxes{
     display: flex;
     align-items: center;
+}
+
+.boxes2{
+    display: flex;
+    flex-direction: column;
 }
