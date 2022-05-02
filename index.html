@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="title">
+        Processamento de Salarios
+    </div>
+
+    <form action="submit" id="calcutalor" onsubmit="return false;">
+        <div class="boxes">
+            <p>Salario base: </p><input id="base" type="text" class="textbox" onchange="calcBruto()" required>
+        </div>
+        <div class="boxes">
+            <p>Subsidio Almoço: </p><input id="almo" type="text" class="textbox" onchange="calcBruto()" required>
+        </div>
+        <div class="boxes">
+            <p>Nº Dias: </p><input id="days" type="text" class="textbox" onchange="calcBruto()" required>
+        </div>
+        <div class="boxes">
+            <p>Estado Civil: </p>
+            <select name="" id="civil" class="textbox" onchange="calcBruto()">
+                <option active>Escolha uma opção</option>
+            </select>
+        </div>
+        <div class="boxes">
+            <p>Titulares: </p><input id="titu" type="text" class="textbox" onchange="calcBruto()" required>
+        </div>
+        <div class="boxes">
+            <p>Dependentes: </p>
+            <select name="" id="depende" class="textbox" onchange="calcBruto(), calcRet()">
+                <option active>Escolha uma opção</option>
+            </select>
+        </div>
+        <div class="boxes">
+            <p>Deficiente: </p>
+            <select name="" id="defici" class="textbox" onchange="calcBruto(), calcRet()">
+                <option active>Escolha uma opção</option>
+            </select>
+        </div>
+        <div class="boxes">
+            <p>Reteção: </p><input id="perc" type="text" class="textbox" required readonly>
+        </div>
+        <div class="boxes">
+            <p>Insentação: </p><input id="inse" type="text" class="textbox" value="0">
+        </div>
+        <div class="boxes">
+            <p>Dioturnidade: </p><input id="diot" type="text" class="textbox" value="0">
+        </div>
+        <div class="boxes">
+            <input id="btn" type="submit" value="Calculate">
+        </div>
+        <div class="boxes">
+            <p><span id="slrBruto"></span></p>
+            <br><br>
+            <p><span id="total"></span></p>
+        </div>
+    </form>
+</body>
+<script src="main.js"></script>
+</html>
