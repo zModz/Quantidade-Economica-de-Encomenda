@@ -13,6 +13,9 @@
     </div>
 
     <form action="submit" id="calculator" onsubmit="return false;">
+        <div class="boxImg">
+            <img src="https://chart.apis.google.com/chart?cht=tx&chl=QEE%20%3D%20%20%5Csqrt%7B%5Cfrac%7B2*consumo*custo%20%7D%7Bunitario*taxa%7D%7D%20">
+        </div>
         <div class="boxes">
             <p>Quantidade Consumo Anual: </p><input id="consumo" type="text" class="textbox" required>
         </div>
@@ -23,7 +26,7 @@
             <p>Custo por unidade: </p><input id="unidade" type="text" class="textbox" required>
         </div>
         <div class="boxes">
-            <p>Custo anual de posse: </p><input id="posse" type="text" class="textbox" required>
+            <p>Taxa anual de posse (%): </p><input id="posse" type="text" class="textbox" required>
         </div>
         <div class="boxes">
             <input id="btn" type="submit" value="Calculate">

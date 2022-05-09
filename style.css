@@ -22,6 +22,14 @@
     margin-left: 5px;
 }
 
+.boxImg{
+    width: 369.13px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .boxes{
     display: flex;
     align-items: center;
